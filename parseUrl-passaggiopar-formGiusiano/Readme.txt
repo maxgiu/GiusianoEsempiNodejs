@@ -1,0 +1,1 @@
+per usare il server prima avvialo poi fai partire index.html, inserisci il cognome e invialo al server che lo elaborerà
