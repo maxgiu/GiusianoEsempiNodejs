@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valutazione Videogiochi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 50px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Valuta il tuo Videogioco</h1>
+    <form action="http://127.0.0.1:3000/valuta" method="POST">
+        <label for="nome">Nome Videogioco:</label>
+        <input type="text" name="nome" id="nome" placeholder="Inserisci il nome del Videogioco" required>
+
+        <label for="voto">Voto (da 0 a 10):</label>
+        <input type="number" name="voto" id="voto" placeholder="Inserisci il voto" min="0" max="10" required>
+
+        <input type="submit" value="Invia Valutazione">
+    </form>
+</body>
+</html>
